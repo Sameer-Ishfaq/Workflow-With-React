@@ -5,4 +5,5 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: Output Github context
+              shell: bash
               run: echo "${{ toJSON(github) }}"
